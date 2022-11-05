@@ -11,7 +11,7 @@ const productSchema = mongoose.Schema({
     },
     quantity: {
         type: Number,
-        required: [true, "Product quantity is missing!"]
+        default: 0
     }
 });
 
