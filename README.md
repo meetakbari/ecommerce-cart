@@ -1,4 +1,4 @@
-# E-commerce cart functionality
+# ECommerce Cart
 
 ## Supported Functionality:
 + One can create a user account.
