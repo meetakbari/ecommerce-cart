@@ -30,7 +30,7 @@ exports.getProducts = async (req, res) => {
         let products = await productRepository.products();
         res.status(200).json({
             status: true,
-            data: products
+            products: products
         })
 
     } catch (err) {
@@ -63,7 +63,7 @@ exports.removeProduct = async (req, res) => {
         let id = req.params.id;
         let productDetails = await productRepository.removeProduct(id);
         res.status(200).json({
-            status: true,
+            status: "deleted",
             data: productDetails
         }) 
     } catch (err) {

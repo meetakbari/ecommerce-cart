@@ -3,7 +3,7 @@ const cartRoutes = require("../src/app/Cart/routes");
 const userRoutes = require("../src/app/User/routes");
 
 module.exports = app => {
-    app.use("/product", productRoutes);
-    app.use("/cart", cartRoutes);
-    app.use("/user", userRoutes);
+    app.use("/api/v1/products", productRoutes);
+    app.use("/api/v1/cart", cartRoutes);
+    app.use("/api/v1/users", userRoutes);
 }

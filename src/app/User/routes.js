@@ -5,6 +5,7 @@ const userController = require("./controller");
 
 router.post("/", userController.createUser);
 
-//get users, get user by id, delete user, update emailId methods can be added here
+router.get("/", userController.getAllUsers);
+//get user by id, delete user, update emailId methods can be added here
 
 module.exports = router;

@@ -7,10 +7,11 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'Home page of shopping app'
+        message: 'E-cart app API',
+        howToUse: 'endpoints /product, /user, /cart for products, users and cart CRUD operations respectively.'
     })
 });
 
 app.listen(PORT, () => {
-    console.log(`shopping cart running on  ${PORT}`);
+    console.log(`E-cart app running on localhost:${PORT}`);
 });

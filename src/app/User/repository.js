@@ -1,5 +1,5 @@
 const User = require("./model");
-const Cart = require("../Cart/model");
+// const Cart = require("../Cart/model");
 
 exports.users = async () => {
     const users = await User.find();
@@ -16,7 +16,6 @@ exports.createUser = async (payload) => {
     return newUser;
 }
 
-exports
 exports.removeUser = async (id) => {
     const user = await User.findByIdAndRemove(id);
     return user;
