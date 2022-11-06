@@ -36,19 +36,19 @@
 
 ## API END-PONITS
 ### For User Actions 
-1. Create user [POST: /api/v1/users] [Body-JSON: username, email]
-2. Get all users [GET: /api/v1/users]
+1. Create user [POST: `/api/v1/users`] [Body-JSON: username, email]
+2. Get all users [GET: `/api/v1/users`]
 
 ### For Product Actions 
-1. Create a product [POST: /api/v1/products] [Body-JSON: name, price, quantity]
-2. Get all products [GET: /api/v1/products] 
-3. Get a product by Id [GET: /api/v1/products/:productId] 
-4. Delete a product by Id [DELETE: /api/v1/products/:productId] 
+1. Create a product [POST: `/api/v1/products`] [Body-JSON: name, price, quantity]
+2. Get all products [GET: `/api/v1/products`] 
+3. Get a product by Id [GET: `/api/v1/products/:productId`] 
+4. Delete a product by Id [DELETE: `/api/v1/products/:productId`] 
 
 ### For Cart Actions
-1. Add a product to cart [POST: /api/v1/cart/] [Body-JSON: userId, productId, quantity]
-2. View cart of a user [GET: /api/v1/cart/:userId] 
-3. Remove a product from cart [DELETE: /api/v1/cart/:userId] [Body-JSON: productId]
+1. Add a product to cart [POST: `/api/v1/cart/`] [Body-JSON: userId, productId, quantity]
+2. View cart of a user [GET: `/api/v1/cart/:userId`] 
+3. Remove a product from cart [DELETE: `/api/v1/cart/:userId`] [Body-JSON: productId]
 
 
 
